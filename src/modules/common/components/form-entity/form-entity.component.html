@@ -1,0 +1,6 @@
+<ng-container *ngIf="model">
+  <label [for]="model.id">{{model.label}}</label>
+  <input [id]="model.id"
+         type="text"
+         [(ngModel)]="model.value" />
+</ng-container>

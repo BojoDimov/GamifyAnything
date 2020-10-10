@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GamifyAnythingCommonModule } from 'src/modules/common/common.module';
+import { FormsModule } from '@angular/forms';
+import { GamifyAnythingFormsModule } from 'src/modules/forms/forms.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    GamifyAnythingCommonModule,
+    GamifyAnythingFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--normal-spacing);
+}
+
+:host label {
+  margin-bottom: var(--small-spacing);
+  font-size: .9rem;
+}
+
+input {
+  padding: var(--small-spacing) var(--normal-spacing);
+  border-radius: 3px;
+  border: 1px solid darkgray;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid lightcoral;
+}

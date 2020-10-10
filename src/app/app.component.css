@@ -1,0 +1,40 @@
+.form-wrapper {
+  width: 600px;
+  border: 2px solid salmon;
+  border-radius: 5px;
+  padding: var(--large-spacing);
+}
+
+.form-wrapper .buttons {
+  margin-top: var(--large-spacing);
+  display: flex;
+  margin-left: var(--negative-normal-spacing);
+}
+
+.form-wrapper .buttons > button {
+  margin-left: var(--normal-spacing);
+  border-radius: 5px;
+  padding: var(--normal-spacing) var(--large-spacing);
+  color: white;
+  background-color: salmon;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.form-wrapper .buttons > button:hover {
+  background-color: rgb(245, 162, 153);
+  cursor: pointer;
+}
+
+.form-wrapper .buttons > button.outlined {
+  border: 1px solid salmon;
+  background-color: white;
+  color: rgb(214, 70, 54);
+}
+
+.form-wrapper .buttons > button.outlined:hover {
+  background-color: rgb(245, 162, 153);
+  border-color: rgb(245, 162, 153);
+  color: white;
+}

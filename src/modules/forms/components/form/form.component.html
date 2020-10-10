@@ -1,0 +1,11 @@
+<div *ngIf="model">
+  <h3>{{model.label}}</h3>
+  <p>{{model.description}}</p>
+
+  <ng-container *ngFor="let subform of model.children;let i=index">
+    <ga-form *ngIf="subform.children"
+             [(ngModel)]="model.children[i]"></ga-form>
+    <ga-form-entity *ngIf="!subform.children"
+                    [(ngModel)]="model.children[i]"></ga-form-entity>
+  </ng-container>
+</div>

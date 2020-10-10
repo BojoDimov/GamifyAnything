@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-border-color: rgb(221, 143, 135);
+  --primary-font-color: darkgray;
+  --primary-background-color: whitesmoke;
+}
+
+:root {
+  --small-spacing: 4px;
+  --normal-spacing: 8px;
+  --large-spacing: 16px;
+  --xlarge-spacing: 24px;
+  --line-height: 26px;
+  --small-border: 1px;
+
+  --negative-normal-spacing: -8px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.texture-wrapper {
+  border-radius: 3px;
+  padding: var(--small-border);
+  display: flex;
+}
+
+.texture-wrapper > * {
+  flex: 1 1 auto;
+}
+
+.gradient-border {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
